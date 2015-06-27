@@ -14,11 +14,14 @@ A command line program to print meta information about the given shapefile.
 * Free software: MIT license
 * Documentation: https://pythonhosted.org/shpinfo/.
 
+Install
+-------
+
+    $ pip install shpinfo
+
 Usage
 -----
 
-.. code:: Bash
-
-    shpinfo myfile.shp
+    $ shpinfo myfile.shp
 
 .. image:: shpinfo.gif
