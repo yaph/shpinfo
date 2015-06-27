@@ -20,3 +20,5 @@ Usage
 .. code:: Bash
 
     shpinfo myfile.shp
+
+.. image:: shpinfo.gif

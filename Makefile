@@ -10,6 +10,7 @@ help:
 	@echo "test-all - run tests on every Python version with tox"
 	@echo "coverage - check code coverage quickly with the default Python"
 	@echo "docs - generate Sphinx HTML documentation, including API docs"
+	@echo "docs-release - generate and upload docs to PyPI"
 	@echo "release - package and upload a release"
 	@echo "dist - package"
 	@echo "install - install the package to the active Python's site-packages"
@@ -56,6 +57,9 @@ docs:
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	firefox docs/_build/html/index.html
+
+docs-release: docs
+	python setup.py upload_docs
 
 release: clean
 	python setup.py sdist upload
