@@ -18,12 +18,14 @@ Install
 -------
 
 ::
+
     $ pip install shpinfo
 
 Usage
 -----
 
 ::
+
     $ shpinfo myfile.shp
 
 .. image:: shpinfo.gif
