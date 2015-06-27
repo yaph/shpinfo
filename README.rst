@@ -17,11 +17,13 @@ A command line program to print meta information about the given shapefile.
 Install
 -------
 
+::
     $ pip install shpinfo
 
 Usage
 -----
 
+::
     $ shpinfo myfile.shp
 
 .. image:: shpinfo.gif
