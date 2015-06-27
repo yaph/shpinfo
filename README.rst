@@ -28,4 +28,4 @@ Usage
 
     $ shpinfo myfile.shp
 
-.. image:: shpinfo.gif
+.. image:: https://raw.githubusercontent.com/yaph/shpinfo/master/shpinfo.gif
