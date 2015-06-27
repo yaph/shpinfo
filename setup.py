@@ -36,7 +36,7 @@ setup(
     zip_safe=False,
     keywords='gis geospatial geography shapefile',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',

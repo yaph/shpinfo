@@ -40,14 +40,14 @@ def main(filename):
     print('{0:35s}|{1:14s}|{2:>14s}|{3:>14s}'.format('Field Name', 'Field Type', 'Field Length', 'Decimal Length'))
     print('-' * 80)
     for f in sf.fields[1:]:  # omit DeletionFlag
-        print('{0:35s}|{1:14s}|{2:14d}|{3:14d}'.format(f[0], field_types.get(f[1]), f[2], f[3]))
+        print('{0:35s}|{1:14s}|{2:14,d}|{3:14d}'.format(f[0], field_types.get(f[1]), f[2], f[3]))
 
     print('\n\nShapes\n------\n')
     print('{0:35s}|{1:>14s}'.format('Shape Type', 'Count'))
     print('-' * 50)
-    shapes = Counter(s.shapeType for s in sf.shapes())
+    shapes = Counter(s.shapeType for s in sf.iterShapes())
     for stype, count in shapes.items():
-        print('{0:35s}|{1:14d}'.format(shape_types.get(stype), count))
+        print('{0:35s}|{1:14,d}'.format(shape_types.get(stype), count))
 
 
 if __name__ == '__main__':
